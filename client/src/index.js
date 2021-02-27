@@ -13,3 +13,5 @@ ReactDOM.render(
 
 console.log("Stripe key is:", process.env.REACT_APP_STRIPE_PUB_KEY);
 console.log("Enviroment key is:", process.env.NODE_ENV);
+
+// some random comment
