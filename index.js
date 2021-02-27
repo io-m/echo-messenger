@@ -44,12 +44,10 @@ require("./routes/billingRoutes")(app);
 // It is only for production level mode, because in dev. mode
 // we have create-react-app 'separate' server
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("echo-messenger-client/build"));
+  app.use(express.static("client/build"));
   const path = require("path");
   app.get("*", (req, res) => {
-    res.sendFile(
-      path.resolve(__dirname, "echo-messenger-client", "build", "index.html")
-    );
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 

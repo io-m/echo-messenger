@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "npm run start --prefix echo-messenger-client"
+    "client": "npm run start --prefix echo-messenger-client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Josip Miljak",
   "license": "ISC",
