@@ -3,5 +3,5 @@ if (process.env.NODE_ENV === "production") {
   module.exports = require("./production");
 } else {
   // This is development set -> on local computer, so export keys (googleID, google client secret et...) from dev.js
-  modeule.exports = require("./dev");
+  module.exports = require("./dev");
 }
