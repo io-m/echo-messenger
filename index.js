@@ -30,10 +30,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/", (req, res) => {
-  res.send("hi");
-});
-
 // function from authRoutes dir. There, we define all routes,
 // but here we just execute them
 require("./routes/authRoutes")(app);
